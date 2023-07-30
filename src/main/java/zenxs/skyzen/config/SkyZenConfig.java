@@ -33,13 +33,6 @@ public class SkyZenConfig extends Config {
     )
     public static float customFovSlider = 90f; // The default value for the float Slider.
 
-    @Switch(
-            name = "Gemstone Coin Tracker",
-            category = "Mining",
-            subcategory = "Gemstone"
-    )
-    public static boolean gemstoneCoinTracker = false;
-
     public SkyZenConfig() {
         super(new Mod(SkyZen.NAME, ModType.SKYBLOCK), SkyZen.MODID + ".json");
         initialize();

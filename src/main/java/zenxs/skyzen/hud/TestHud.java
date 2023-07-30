@@ -6,7 +6,7 @@ import zenxs.skyzen.config.SkyZenConfig;
 /**
  * An example OneConfig HUD that is started in the config and displays text.
  *
- * @see SkyZenConfig#hud
+ *
  */
 public class TestHud extends SingleTextHud {
     public TestHud() {

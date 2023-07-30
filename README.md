@@ -3,7 +3,5 @@
 
 One day Zezo!
 
-## Feature List?
+## Feature List
 - Custom Fov
-- Slot Lock/Bind
-- Dungeon Map

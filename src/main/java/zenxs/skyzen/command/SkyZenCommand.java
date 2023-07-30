@@ -14,7 +14,7 @@ import cc.polyfrost.oneconfig.utils.commands.annotations.Main;
  */
 
 @Command(value = SkyZen.MODID, description = "Access the " + SkyZen.NAME + " GUI.")
-public class ExampleCommand {
+public class SkyZenCommand {
     @Main
     private void handle() {
         SkyZen.INSTANCE.config.openGui();

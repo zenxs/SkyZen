@@ -1,7 +1,8 @@
 package zenxs.skyzen;
 
-import zenxs.skyzen.command.ExampleCommand;
-import zenxs.skyzen.config.TestConfig;
+import cc.polyfrost.oneconfig.events.EventManager;
+import zenxs.skyzen.command.SkyZenCommand;
+import zenxs.skyzen.config.SkyZenConfig;
 import cc.polyfrost.oneconfig.events.event.InitializationEvent;
 import net.minecraftforge.fml.common.Mod;
 import cc.polyfrost.oneconfig.utils.commands.CommandManager;
@@ -21,12 +22,16 @@ public class SkyZen {
     // Sets the variables from `gradle.properties`. See the `blossom` config in `build.gradle.kts`.
     @Mod.Instance(MODID)
     public static SkyZen INSTANCE; // Adds the instance of the mod, so we can access other variables.
-    public static TestConfig config;
+    public static SkyZenConfig config;
 
     // Register the config and commands.
     @Mod.EventHandler
     public void onInit(FMLInitializationEvent event) {
-        config = new TestConfig();
-        CommandManager.INSTANCE.registerCommand(new ExampleCommand());
+        config = new SkyZenConfig();
+        CommandManager.INSTANCE.registerCommand(new SkyZenCommand());
+    }
+    @Mod.EventHandler
+    public void init(FMLInitializationEvent event) {
+        EventManager.INSTANCE.register(new zenxs.skyzen.modules.misc.CustomFov());
     }
 }

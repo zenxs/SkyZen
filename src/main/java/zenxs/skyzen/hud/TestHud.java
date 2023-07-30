@@ -1,12 +1,12 @@
 package zenxs.skyzen.hud;
 
 import cc.polyfrost.oneconfig.hud.SingleTextHud;
-import zenxs.skyzen.config.TestConfig;
+import zenxs.skyzen.config.SkyZenConfig;
 
 /**
  * An example OneConfig HUD that is started in the config and displays text.
  *
- * @see TestConfig#hud
+ * @see SkyZenConfig#hud
  */
 public class TestHud extends SingleTextHud {
     public TestHud() {

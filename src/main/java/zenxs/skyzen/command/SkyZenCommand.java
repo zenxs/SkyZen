@@ -13,10 +13,11 @@ import cc.polyfrost.oneconfig.utils.commands.annotations.Main;
  * @see SkyZen
  */
 
-@Command(value = SkyZen.MODID, description = "Access the " + SkyZen.NAME + " GUI.")
+@Command(value = SkyZen.MODID, description = "Access the " + SkyZen.NAME + " GUI.", aliases = {"sz"})
 public class SkyZenCommand {
     @Main
     private void handle() {
         SkyZen.INSTANCE.config.openGui();
     }
+
 }

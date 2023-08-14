@@ -1,9 +1,7 @@
 # SkyZen
-![skyzen](https://github.com/zenxs/SkyZen/assets/45582571/28740fd2-9447-45bb-9be5-ab69c0da541f)
+![skiblocc](https://github.com/zenxs/SkyZen/assets/45582571/211ebd24-39c1-44c2-accc-9024d5647503)
 
-One day Zezo!
+One day, I will learn Java
 
-## Feature List?
+## Feature List
 - Custom Fov
-- Slot Lock/Bind
-- Dungeon Map
